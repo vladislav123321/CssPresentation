@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+.slideshow {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    position: absolute;
+    max-width: 90vw;
+    max-height: 80vh;
+    opacity: 0;
+    animation: slideshow 36s ease-in-out infinite;
+}
+@keyframes slideshow {
+    from {
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+
+    5% {
+        opacity: 1;
+        filter: grayscale(50%);
+    }
+
+    10% {
+        opacity: 1;
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+
+    15% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    20% {
+        opacity: 0;
+        filter: blur(2px);
+        transform: scale(0.9);
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+.slideshow .i_1 {
+    animation-delay: 6s;
+    transform: translateX(-100px) rotate(-3deg);
+}
+
+.slideshow .i_2 {
+    animation-delay: 12s;
+    transform: translateX(100px) rotate(3deg);
+}
+
+.slideshow .i_3 {
+    animation-delay: 18s;
+    transform: translateY(-100px) rotate(3deg);
+}
+
+.slideshow .i_4 {
+    animation-delay: 24s;
+    transform: translateY(100px) rotate(-3deg);
+}
+
+.slideshow .i_5 {
+    animation-delay: 30s;
+    transform: rotate(-6deg);
+}
+
+.slideshow .i_6 {
+    animation-delay: 36s;
+    transform: rotate(6deg);
+}
+p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e4e4e4;
+    text-shadow: 0 0 1px #000;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    opacity: 0;
+    animation: title 36s linear infinite;
+}
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+.slideshow .p_1 {
+    animation-delay: 7s;
+}
+
+.slideshow .p_2 {
+    animation-delay: 13s;
+}
+
+.slideshow .p_3 {
+    animation-delay: 19s;
+}
+
+.slideshow .p_4 {
+    animation-delay: 25s;
+}
+
+.slideshow .p_5 {
+    animation-delay: 31s;
+}
+
+.slideshow .p_6 {
+    animation-delay: 37s;
+}
+	</style>
+</head>
+<body>
+	<div class="slideshow">
+    <img src="https://thebestcode.ru/media/animatedSlideshow/1.jpg" alt="#" class="i_1">
+    <p class="p_1">a-slide</p>
+    <img src="https://thebestcode.ru/media/animatedSlideshow/2.jpg" alt="#" class="i_2">
+    <p class="p_2">b-slide</p>
+    <img src="https://thebestcode.ru/media/animatedSlideshow/3.jpg" alt="#" class="i_3">
+    <p class="p_3">c-slide</p>
+    <img src="https://thebestcode.ru/media/animatedSlideshow/4.jpg" alt="#" class="i_4">
+    <p class="p_4">d-slide</p>
+    <img src="https://thebestcode.ru/media/animatedSlideshow/5.jpg" alt="#" class="i_5">
+    <p class="p_5">e-slide</p>
+    <img src="https://thebestcode.ru/media/animatedSlideshow/6.jpg" alt="#" class="i_6">
+    <p class="p_6">f-slide</p>
+</div>
+
+</body>
+</html>
